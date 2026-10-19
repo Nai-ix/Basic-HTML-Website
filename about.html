@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Basic Structure Website</title>
+    <meta name="discription" content="A simple Website with multiple pages"/>
+    <link rel="icon" type="image/x-icon" href="image/Icon.png"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    
+<body class="about-page">
+    <header>
+        <div id="icon">
+            <img src="image/Icon.png" alt="Icon" width="60px" height="60px">
+            <h1>Cinco</h1>
+        </div>
+
+        <nav>
+            <a class="pages" href="home.html" >Home</a>
+            <a class="pages" href="about.html">Project</a>
+            <a class="pages" href="article.html">Article</a>
+            <a class="pages" href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="projects">
+            <article>
+                <h2>Projects</h2>
+                <ul>
+                    <li>Single Web Page</li>
+                    <li>Employee Payroll System</li>
+                    <li>Personal Website</li>
+                    <li>Quiz app</li>
+                </ul>
+            </article>
+                
+            <article>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ul>
+            </article>
+            
+        </section>
+        <section class="experiece">
+            <article>
+                <h2>Work Experience</h2>
+                <a rel="noopener noreferrer" href="https://roadmap.sh/">roadmap.sh</a>
+                <p>Solved all the projects</p>
+                <a rel="noopener noreferrer" href="https://github.com/Nai-ix" target="_blank">Visit my Profile</a>
+            </article>
+
+            <article>
+                <h2>OpenSource Work</h2>
+                <p>Contributed to 6 opensource projects. Made my own projects with 0 github star.</p>
+                <p>Solved all the projects</p>
+                <a rel="noopener noreferrer" href="https://github.com/Nai-ix" target="_blank">Visit my Profile</a>
+            </article>
+        </section>
+
+        <section class="education"> 
+            <h2>Education</h2>
+            <p>I will graduate soon with a good gpa. I will practice a lot of times</p>
+
+            <h3>Courses I took: </h3>
+            <ul>
+                <li>Computer Programming</li>
+                <li>Introduction to Computing</li>
+                <li>Mathematics in the Modern World</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p> Copyright rights reserved 2026</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: grey;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height:25vh;
+    flex-wrap: wrap;
+}
+
+nav{
+    flex:flow;
+}
+#icon{
+    display: flex;
+    align-items: center;
+}
+
+.pages{
+    background-color: rgba(0, 0, 0, 0.732);
+    color: bisque;
+    padding:10px;
+    margin:5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.pages:hover{
+    background-color:  bisque;
+    color: rgba(0, 0, 0, 0.732);
+    padding:10px;
+    margin:5px;
+    border-radius: 10px;
+    font-size: large;
+    text-decoration: none ;
+}
+
+.home-page main{
+    padding:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.732);
+    background-color: bisque;
+}
+
+.about-page main {
+    padding: 5vh 0 15vh 25px;
+    display: flex;
+    flex-wrap: row wrap;
+    color: rgba(0, 0, 0, 0.732);
+    background-color: bisque;
+}
+
+.about-page section{
+    padding:15px;
+}
+
+.about-page .projects{
+    flex:25%;
+}
+
+.about-page .experiece{
+    flex:50%;
+}
+
+.about-page .education{
+    flex:25%;
+}
+
+footer{
+    background-color: grey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:15vh;
+}
+
+@media (max-width:600px){
+    .about-page main{
+        flex-direction: column;
+    }
+
+    .about-page section{
+        margin: 15px;
+    }
+
+    .about-page header{
+        flex-wrap: column wrap;
+        flex-flow: 1 1 0;
+    }
+}
