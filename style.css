@@ -62,6 +62,14 @@ nav{
     background-color: bisque;
 }
 
+.article-page main {
+    padding: 5vh 0 15vh 25px;
+    display: flex;
+    flex-wrap: row wrap;
+    color: rgba(0, 0, 0, 0.732);
+    background-color: bisque;
+}
+
 .about-page section{
     padding:15px;
 }
@@ -76,6 +84,18 @@ nav{
 
 .about-page .education{
     flex:25%;
+}
+
+.articles-page section{ 
+    padding: 15px;
+}
+
+.about-page art1{
+    flex: 50%;
+}
+
+.articles-page art2{
+    flex:50%;
 }
 
 footer{
@@ -99,6 +119,19 @@ footer{
     }
 
     .about-page header{
+        flex-wrap: column wrap;
+        flex-flow: 1 1 0;
+    }
+
+    .article-page main{
+        flex-direction: column;
+    }
+
+    .article-page section{
+        margin: 15px;
+    }
+
+    .article-page header{
         flex-wrap: column wrap;
         flex-flow: 1 1 0;
     }
